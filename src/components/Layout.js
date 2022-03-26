@@ -2,8 +2,12 @@ import React from "react";
 import Header from "./Header";
 import Products from "./Products";
 import "./Layout.css";
+import {useSelector} from 'react-redux'
+import CartItems from "./CartItems";
+
 const Layout = () => {
-  let total = 100;
+  let total = useSelector(state => state.cart.total);
+  const showCart = useSelector(state => state.cart.showCart)
 
   return (
     <React.Fragment>
@@ -14,6 +18,7 @@ const Layout = () => {
           <h3>Total: ${total}</h3>
           <button className="orderBtn">Place Order</button>
         </div>{" "}
+        {showCart && <CartItems />}
       </div>
     </React.Fragment>
   );

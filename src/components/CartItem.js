@@ -4,18 +4,21 @@ import "./Cart.css";
 import { cartActions } from "./../store/cartSlice";
 const CartItem = ({ name, quantity, total, price, id }) => {
   const dispatch = useDispatch();
+
   const removeHandler = () => {
-    dispatch(cartActions.removeFromCart(id));
+    dispatch(cartActions.remove(id));
   };
+  
   const addHandler = () => {
     dispatch(
-      cartActions.addToCart({
+      cartActions.add({
         id,
         name,
         price,
       })
     );
   };
+  
   return (
     <div className="cartItem">
       <h2> {name}</h2>
