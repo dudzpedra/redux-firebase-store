@@ -1,5 +1,5 @@
 # Redux Store
-A simple store made with React, Redux and Firebase Realtime Database.
+A simple store made with React, Redux, Firebase Realtime Database and [Material Design](https://mui.com).
 
 ## Available Scripts
 
