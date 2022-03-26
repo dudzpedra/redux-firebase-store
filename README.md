@@ -1,5 +1,6 @@
 # Redux Store
-A simple store made with React, Redux, Firebase Realtime Database and [Material Design](https://mui.com).
+A simple store made with React, Redux, Firebase Realtime Database, AWS Amplify and [Material Design](https://mui.com).
+Please check it out [here](https://main.dcch79j6ih2o9.amplifyapp.com/)
 
 ## Available Scripts
 
